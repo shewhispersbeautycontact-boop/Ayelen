@@ -42,7 +42,7 @@ header.site-header p {
 
 .controls {
   max-width: 1100px;
-  margin: -1.5rem auto 1.5rem;
+  margin: 0 auto 1.5rem;
   padding: 0 1.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -193,8 +193,149 @@ footer.site-footer {
   padding: 1.5rem 1rem 2.5rem;
 }
 
+header.site-header .subtitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.85;
+  margin-top: 0.8rem;
+}
+
+.view-switch {
+  max-width: 1100px;
+  margin: -1.3rem auto 1rem;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.view-switch a {
+  flex: 0 1 auto;
+  text-align: center;
+  padding: 0.65rem 1.4rem;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.view-switch a + a {
+  border-left: none;
+}
+
+.view-switch a:first-child {
+  border-radius: 999px 0 0 999px;
+}
+
+.view-switch a:last-child {
+  border-radius: 0 999px 999px 0;
+}
+
+.view-switch a.active {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.terms {
+  max-width: 1052px;
+  margin: 0 auto 1rem;
+  padding: 1rem 1.4rem;
+  background: var(--pink-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.terms h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  color: var(--pink-dark);
+}
+
+.terms ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .terms {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.product-card .shades {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.price-table .head {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.price-table .value .extra {
+  display: block;
+  font-weight: 400;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.price-table.tiers .value {
+  font-variant-numeric: tabular-nums;
+}
+
+.product-card .msrp {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  text-align: right;
+}
+
+.set-card .badge {
+  align-self: flex-start;
+  background: var(--pink-light);
+  color: var(--pink-dark);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.set-card .contents {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.site-footer a {
+  color: var(--pink-dark);
+}
+
 @media (max-width: 480px) {
   header.site-header h1 {
     font-size: 1.7rem;
+  }
+
+  .view-switch {
+    padding: 0 1rem;
+  }
+
+  .view-switch a {
+    flex: 1 1 0;
+    padding: 0.6rem 0.4rem;
+    font-size: 0.88rem;
   }
 }

@@ -1,7 +1,15 @@
-# Ayelen — Product Pricing List Website
+# SheWhispers Beauty — Price List Website
 
-A simple, no-build website that shows your products with pricing per unit,
-half dozen, and dozen. Works by just opening `index.html` in a browser —
+A simple, no-build website with three views:
+
+- **Retail** — pricing per unit, half dozen, and dozen
+- **Wholesale** — case-pack tiers (24 / 48 / 96) with per-unit and case
+  totals, plus suggested retail and your wholesale terms
+- **Gift Sets** — curated sets for salons, dance studios, and corporate
+  gifting, with quantity pricing
+
+Each view has its own link you can send to a buyer: `index.html#retail`,
+`index.html#wholesale`, `index.html#sets`. Works by just opening `index.html` in a browser —
 no server or installation required.
 
 ## How to view it
@@ -36,6 +44,19 @@ between items.
 To add a new category, add its name to the `categories` list near the top
 of `data/products.js`, then use that same name on any product.
 
+## Editing wholesale tiers and gift sets
+
+Also in `data/products.js`:
+
+- `wholesaleTiers` — each case pack's name, unit count, and % off retail.
+  Wholesale prices are calculated from each product's `pricing.each`. To set
+  a product's wholesale price by hand, add
+  `wholesale: { starter: 9.00, studio: 8.50, boutique: 8.00 }` to it.
+- `wholesaleTerms` — the bullet list shown on the Wholesale view.
+- `giftSets` — each set's name, `audience` (Salon, Dance Studio, or
+  Corporate), contents, retail value, and quantity price `tiers`.
+- `business.contactEmail` — add your email to show an inquiry link in the footer.
+
 ## Adding product photos
 
 1. Put the image file (e.g. `lashes1.jpg`) inside the `images/` folder.
@@ -52,6 +73,6 @@ This is a static site, so it can be hosted for free in a few ways:
 
 ## Editing the sample data
 
-The current products, categories, and prices are placeholder examples so
-you can see how the site looks. Replace them in `data/products.js` with
-your real products whenever you're ready.
+Products and retail prices come from shewhispersbeauty.com. The half
+dozen / dozen prices, wholesale discounts, terms, and gift sets are
+suggested starting points; change them in `data/products.js`.
