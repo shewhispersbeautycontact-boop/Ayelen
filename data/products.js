@@ -108,22 +108,13 @@ window.AYELEN_DATA = {
       pricing: { each: 18.00, halfDozen: 103.00, dozen: 194.00 }
     },
     {
-      id: "silk-xl",
-      name: "Premium Silk Scrunchie — XL",
-      category: "Silk Scrunchies",
-      description: "The Silk Standard: elegance and hair health.",
-      shades: ["Edelweiss"],
-      image: "",
-      pricing: { each: 40.00, halfDozen: 228.00, dozen: 432.00 }
-    },
-    {
       id: "silk-xxl",
       name: "Premium Silk Scrunchie — XXL",
       category: "Silk Scrunchies",
-      description: "The Silk Standard in our fullest size.",
+      description: "The Silk Standard: elegance and hair health. One size, XXL.",
       shades: ["Edelweiss"],
       image: "",
-      pricing: { each: 45.00, halfDozen: 257.00, dozen: 486.00 }
+      pricing: { each: 40.00, halfDozen: 228.00, dozen: 432.00 }
     },
     {
       id: "after-hours-xl",
@@ -266,11 +257,11 @@ window.AYELEN_DATA = {
         "Gift box, tissue and custom message card"
       ],
       image: "",
-      retail: 50.00,
+      retail: 46.00,
       tiers: [
-        { min: 10, price: 36.00 },
-        { min: 25, price: 33.00 },
-        { min: 50, price: 30.00 }
+        { min: 10, price: 33.00 },
+        { min: 25, price: 30.00 },
+        { min: 50, price: 28.00 }
       ]
     },
     {
