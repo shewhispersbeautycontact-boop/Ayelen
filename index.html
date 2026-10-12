@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayelen — Price List</title>
+  <title>SheWhispers Beauty — Price List</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <h1 id="business-name">Ayelen</h1>
-    <p id="business-tagline">Beauty Products Price List</p>
+    <h1 id="business-name">SheWhispers Beauty</h1>
+    <p id="business-tagline">Your invitation to the front row.</p>
+    <p id="business-subtitle" class="subtitle"></p>
   </header>
+
+  <nav class="view-switch" id="view-switch" aria-label="Price list view">
+    <a href="#retail" data-view="retail">Retail</a>
+    <a href="#wholesale" data-view="wholesale">Wholesale</a>
+    <a href="#sets" data-view="sets">Gift Sets</a>
+  </nav>
 
   <div class="controls">
     <input type="search" id="search-input" placeholder="Search products..." />
@@ -18,10 +25,13 @@
 
   <nav class="category-tabs" id="category-tabs"></nav>
 
+  <section class="terms" id="terms" hidden></section>
+
   <main id="product-container"></main>
 
   <footer class="site-footer">
     <p id="footer-note"></p>
+    <p id="footer-contact"></p>
   </footer>
 
   <script src="data/products.js"></script>
