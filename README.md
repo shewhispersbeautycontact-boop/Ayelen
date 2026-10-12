@@ -55,6 +55,8 @@ Also in `data/products.js`:
 - `wholesaleTerms` — the bullet list shown on the Wholesale view.
 - `giftSets` — each set's name, `audience` (Salon, Dance Studio, or
   Corporate), contents, retail value, and quantity price `tiers`.
+- `giftSetAddOns` — the extras list (logo tags, rush, sample kit) shown on
+  the Gift Sets view.
 - `business.contactEmail` — add your email to show an inquiry link in the footer.
 
 ## Adding product photos

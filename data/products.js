@@ -33,6 +33,7 @@
     contents - list of what's inside, one line each
     retail   - price for one set at retail
     tiers    - quantity pricing for businesses: { min: <qty>, price: <per set> }
+  "giftSetAddOns" is the list of extras shown at the top of the Gift Sets view.
 */
 
 window.AYELEN_DATA = {
@@ -152,6 +153,16 @@ window.AYELEN_DATA = {
     "Countertop display and shade card included free with Studio and Boutique cases."
   ],
 
+  /* Extras shown on the Gift Sets view. */
+  giftSetAddOns: [
+    "Logo or ribbon tag: +$1.50 per set (minimum 25).",
+    "Custom fabric color: +$1.00 per piece (minimum 50).",
+    "Custom message card: included free.",
+    "Rush order (under 2 weeks): +15%.",
+    "Buyer sample kit: $25, credited on your first order.",
+    "Extra countertop display: $25."
+  ],
+
   /* Curated gift sets for salons, dance studios and corporate gifting.
      These are starting suggestions: rename, re-price or remove freely. */
   setAudiences: [
@@ -196,6 +207,41 @@ window.AYELEN_DATA = {
       ]
     },
     {
+      id: "salon-silk-ritual",
+      name: "The Silk Ritual",
+      audience: "Salon",
+      description: "A luxe take-home pairing to offer after color or a blowout.",
+      contents: [
+        "1 Edelweiss XXL silk scrunchie",
+        "1 XXS satin scrunchie",
+        "Raven gift box"
+      ],
+      image: "",
+      retail: 48.00,
+      tiers: [
+        { min: 10, price: 35.00 },
+        { min: 25, price: 32.00 },
+        { min: 50, price: 30.00 }
+      ]
+    },
+    {
+      id: "salon-service-mini",
+      name: "Service Gift Mini",
+      audience: "Salon",
+      description: "A small thank-you for clients after their appointment.",
+      contents: [
+        "1 XS satin scrunchie",
+        "Hang card printed with your salon name"
+      ],
+      image: "",
+      retail: 14.00,
+      tiers: [
+        { min: 25, price: 9.00 },
+        { min: 50, price: 8.25 },
+        { min: 100, price: 7.50 }
+      ]
+    },
+    {
       id: "dance-front-row",
       name: "The Front Row Set",
       audience: "Dance Studio",
@@ -227,6 +273,40 @@ window.AYELEN_DATA = {
         { min: 25, price: 9.50 },
         { min: 50, price: 8.75 },
         { min: 100, price: 8.00 }
+      ]
+    },
+    {
+      id: "dance-studio-color",
+      name: "Studio Color Scrunchie",
+      audience: "Dance Studio",
+      description: "Your studio color for the whole company. Minimum 50.",
+      contents: [
+        "1 XS satin scrunchie in your studio color",
+        "Hang card with your studio logo"
+      ],
+      image: "",
+      retail: 14.00,
+      tiers: [
+        { min: 50, price: 9.00 },
+        { min: 100, price: 8.25 },
+        { min: 200, price: 7.50 }
+      ]
+    },
+    {
+      id: "dance-backstage",
+      name: "The Backstage Set",
+      audience: "Dance Studio",
+      description: "Every size in one shade, for studio and arts venue gift shops.",
+      contents: [
+        "4 satin scrunchies: XXS, XS, XL and XXL in one shade",
+        "Long gift box"
+      ],
+      image: "",
+      retail: 52.00,
+      tiers: [
+        { min: 12, price: 32.00 },
+        { min: 24, price: 30.00 },
+        { min: 48, price: 28.00 }
       ]
     },
     {
@@ -279,6 +359,24 @@ window.AYELEN_DATA = {
         { min: 25, price: 17.00 },
         { min: 50, price: 15.50 },
         { min: 100, price: 14.00 }
+      ]
+    },
+    {
+      id: "corp-bridal-box",
+      name: "Bride & Bridesmaids Box",
+      audience: "Corporate",
+      description: "A bridal party gift, ready for the big day.",
+      contents: [
+        "1 Edelweiss XXL silk scrunchie for the bride",
+        "4 Rose XS satin scrunchies for bridesmaids",
+        "Name cards for each"
+      ],
+      image: "",
+      retail: 89.00,
+      tiers: [
+        { min: 1, price: 62.00 },
+        { min: 6, price: 57.00 },
+        { min: 12, price: 53.00 }
       ]
     }
   ]

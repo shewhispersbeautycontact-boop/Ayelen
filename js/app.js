@@ -88,11 +88,15 @@
   }
 
   function renderTerms() {
-    const list = activeView === "wholesale" ? data.wholesaleTerms : null;
+    const boxes = {
+      wholesale: ["Wholesale terms", data.wholesaleTerms],
+      sets: ["Add-ons & customization", data.giftSetAddOns]
+    };
+    const [title, list] = boxes[activeView] || [];
     terms.innerHTML = "";
     terms.hidden = !list || list.length === 0;
     if (terms.hidden) return;
-    terms.appendChild(el("h2", "", "Wholesale terms"));
+    terms.appendChild(el("h2", "", title));
     const ul = el("ul");
     list.forEach((t) => ul.appendChild(el("li", "", t)));
     terms.appendChild(ul);
